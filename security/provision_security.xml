@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!--    Record Rule for Company-->
+    <record id="hide_provision_company_id" model="ir.rule">
+        <field name="name">Hide Company ID from users</field>
+        <field name="model_id" ref="model_smart_provision"/>
+        <field name="domain_force">['|',('company_id','=',False),('company_id', 'in', company_ids)]</field>
+    </record>
+
+
+    <record id="allow_create_provisions" model="ir.rule">
+        <field name="name">Allow Create Provisions</field>
+        <field name="model_id" ref="model_smart_provision_accounting"/>
+        <field name="domain_force">['|',('company_id','=',False),('company_id', 'in', company_ids)]</field>
+    </record>
+
+</odoo>

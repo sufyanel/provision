@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+acl_smart_provision,smart_provision,model_smart_provision,,1,1,1,1
+acl_smart_provision_accouting,smart_provision_accounting,model_smart_provision_accounting,,1,1,1,1
