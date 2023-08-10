@@ -9,6 +9,7 @@ class SmartProvision(models.Model):
     # Float Fields
     percentage_value = fields.Float(string='Percentage')
     subtotal = fields.Float(string='Subtotal')
+    active = fields.Boolean(default=True)
 
     # Relational Fields
     product_category_id = fields.Many2one('product.category', string='Product Category')

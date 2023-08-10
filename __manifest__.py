@@ -9,6 +9,7 @@
     'category': 'Tools',
     'version': '16.1.0.1.0',
     'depends': ['purchase', 'sale_management', 'account_accountant', 'stock'],
+    'license': 'LGPL-3',
     'data': [
         'security/ir.model.access.csv',
         'security/provision_security.xml',
